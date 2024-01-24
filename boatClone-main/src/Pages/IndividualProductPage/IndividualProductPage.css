@@ -1,0 +1,49 @@
+.individaulProductMain{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 40px;
+}
+
+.imageContainer{
+    width: 500px;
+}
+
+.imageContainer>img{
+    width: 100%;
+    height:100%;
+    top:0;
+    left:0;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid #ecf0f4;
+    border-radius: 10px;
+}
+
+.descTop{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    font-weight: 800;
+    font-size: 28px;
+}
+
+.oldPrice{
+    text-decoration: line-through;
+}
+
+.productDetailContainer{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #ecf0f4;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.individual{
+    margin-top: 30px;
+}

@@ -1,0 +1,61 @@
+.logInContainer{
+    display: flex;
+    justify-content: center;
+    background-color: #F4F5F7;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 1px 1px black;
+    margin: auto;
+    margin-top: 100px;
+    padding: 30px 20px;
+}
+
+.logInContainer form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #F4F5F7;
+    width: 100%;
+}
+
+.logInContainer input{
+    border: 1px solid #F4F5F7;
+    border-radius: 4px;
+}
+
+.logInContainer button{
+    background-color: #ED1C24;
+    padding: 4px 10px;
+    border: #ED1C24;
+    border-radius: 4px;
+    margin: 10px 0px;
+    color: white;
+
+}
+
+.logoutContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.logoutContainer .logoutBtn{
+    width: 10%;
+    background: #1A2024;
+    border: 1px solid #1A2024;
+    padding: 12px;
+    border-radius: 12px;
+    color: #fff;
+    font-size:14px;
+    font-weight:500;
+    letter-spacing: 2.2px;
+}
+
+.newAddress-inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.newAddress-inputs > input{
+    border: 1px solid ;
+}

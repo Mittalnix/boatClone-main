@@ -1,0 +1,8 @@
+.productListingContainer{
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    justify-content: space-evenly;
+    grid-gap: 15px;
+    margin-top: 50px;
+}

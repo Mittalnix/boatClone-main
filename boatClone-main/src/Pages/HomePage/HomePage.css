@@ -1,0 +1,133 @@
+.carouselContainer{
+    margin-bottom: 25px;
+}
+
+.categoryContainer{
+    width: 100%;
+    padding: 0 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+
+}
+
+.categoryHeading h3{
+    margin-top: 0;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 24px;
+    color: #1a2024;
+}
+
+.categoryHeading h3 span{
+    position: relative;
+}
+
+.categoryHeading h3 span::after{
+   content: "";
+   display: block;
+   width: 24px;
+   height: 2px;
+   background: #D83333;
+   position:absolute;
+   bottom: 0.5px;
+   right: 0;
+}
+
+.categoryBlock{
+    max-width: 1600px;
+    margin: auto;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    position: relative;
+    margin-top: 25px;
+}
+.categoryBlock::-webkit-scrollbar {
+    display: none;
+}
+
+.videoCardContainer{
+    height: 351px;
+    min-width: 318px;
+    margin-right: 20px;
+}
+
+.videoCardContainer:first-child{
+    margin-left: auto;
+}
+
+.videoCard{
+    position: relative;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 318px;
+    width: 100%;
+}
+
+.videoCard video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 12px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.categoryName{
+    position: relative;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 0px 12px;
+    padding: 13px 5px 0px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    width: 100%;
+    height: auto;
+}
+
+.categoryName p{
+    margin: 0;
+    text-align: center;
+    opacity: 1;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.promiseIconsBlock{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 100px;
+}
+
+.promiseIconsContainer{ 
+    border-radius: 6px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    max-width: 992px;
+    text-align: center;
+}
+
+.promiseIcon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.promiseIcon img{
+    width: 112px;
+    height:112px;
+}
+
+.promiseIcon p {
+    font-size: 18px;
+}

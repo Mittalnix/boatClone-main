@@ -1,0 +1,75 @@
+.filterMain{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 99;
+}
+
+.filterMain .opac-layer{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.filters{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 30px;
+}
+
+.filterContent{
+    width: 340px;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100%);
+    animation: slideCartWindow 0.3s ease forwards;
+    padding-left: 20px;
+
+}
+
+.filterContent h4{
+    font-weight: 800;
+}
+
+.filterContent input{
+    accent-color:#ED1C24;
+}
+
+.filterHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.filterHeader:nth-child(1){
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.filter-range{
+    display: flex;
+    gap: 10px;
+}
+
+.sortByPrice{
+    display: flex;
+    flex-direction: column;
+}
+
+.sortByRating{
+    display: flex;
+    flex-direction: column;
+}

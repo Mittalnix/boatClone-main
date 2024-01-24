@@ -1,0 +1,32 @@
+.containerMain{
+    margin-top: 40px;
+
+}
+
+.categoryName h2{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.categoryBtns{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.categoryBtns button{
+    border: 1px solid;
+    padding: 4px 10px;
+    border-radius: 10px;
+
+}
+
+.productListing{
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    justify-content: space-evenly;
+    grid-gap: 10px;
+}

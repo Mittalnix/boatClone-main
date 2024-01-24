@@ -1,0 +1,95 @@
+.checkoutHeading{
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.checkoutDetails{
+    display: flex;
+    justify-content: space-around;
+    gap:200px;
+    margin-top: 50px;
+}
+
+.addressContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.addressHeading{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.addressSelection{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px dashed black;
+    padding: 10px 30px;
+    width: 340px;
+    margin: 30px 0px;
+}
+
+.addressContainer>button{
+    width: 100%;
+    background: #1A2024;
+    border: 1px solid #1A2024;
+    padding: 12px;
+    border-radius: 12px;
+    color: #fff;
+    font-size:14px;
+    font-weight:500;
+    letter-spacing: 2.2px;
+}
+
+.orderSummary{
+    box-shadow: 0px 5px 10px 0px black;
+    width: 20rem;
+    padding: 2rem;
+}
+
+.orderSummary>h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.itemQuantityHeader{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.itemQuantityDetails{
+    display: flex;
+    justify-content: space-between;
+}
+
+.orderSummary > button{
+    width: 100%;
+    background: #1A2024;
+    border: 1px solid #1A2024;
+    padding: 12px;
+    border-radius: 12px;
+    color: #fff;
+    font-size:14px;
+    font-weight:500;
+    letter-spacing: 2.2px;
+}
+
+.cartQuantity{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cartPrice{
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkoutBtn{
+    margin-top: 10px;
+}
