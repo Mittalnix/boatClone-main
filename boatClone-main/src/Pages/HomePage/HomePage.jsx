@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { Header } from "../../components/Header/Header";
 import "./HomePage.css";
@@ -40,27 +40,27 @@ const categoryVideos = [
   {
     src: Video1,
     name: "headphones",
-    displayName:"Headphones"
+    displayName: "Headphones",
   },
   {
     src: Video2,
     name: "neckband",
-    displayName:"Neckband"
+    displayName: "Neckband",
   },
   {
     src: Video3,
     name: "smartWatch",
-    displayName:"Smart Watch"
+    displayName: "Smart Watch",
   },
   {
     src: Video4,
     name: "speakers",
-    displayName:"Speakers"
+    displayName: "Speakers",
   },
   {
     src: Video5,
     name: "wirelessEarbuds",
-    displayName:"Wireless Earbuds"
+    displayName: "Wireless Earbuds",
   },
 ];
 
@@ -68,22 +68,22 @@ const promiseIcons = [
   {
     src: WarrantyImage,
     name: "Warranty",
-    adj:"1 year"
+    adj: "1 year",
   },
   {
     src: ReplacementImage,
     name: "Replacement",
-    adj:"7 days"
+    adj: "7 days",
   },
   {
     src: ShippingImage,
     name: "Shipping",
-    adj:"Free"
+    adj: "Free",
   },
   {
     src: BillingImage,
     name: "Billing",
-    adj:"GST"
+    adj: "GST",
   },
 ];
 
@@ -95,7 +95,7 @@ export function HomePage() {
           <Header />
         </div>
         <div className="carouselContainer">
-          <Link to="/products"><Carousel slides={slides} /></Link>
+          <Carousel slides={slides} />
         </div>
         <div className="categoryContainer">
           <div className="categoryHeading">
@@ -109,20 +109,20 @@ export function HomePage() {
           <div className="categoryBlock">
             {categoryVideos.map((video) => (
               <Link to={`/categories/${video.name}`}>
-              <div className="videoCardContainer">
-                <div className="videoCard">
-                  <video
-                    src={video.src}
-                    onMouseOver={(event) => event.target.play()}
-                    muted
-                    loop
-                    onMouseOut={(event) => event.target.pause()}
-                  />
+                <div className="videoCardContainer">
+                  <div className="videoCard">
+                    <video
+                      src={video.src}
+                      onMouseOver={(event) => event.target.play()}
+                      muted
+                      loop
+                      onMouseOut={(event) => event.target.pause()}
+                    />
+                  </div>
+                  <div className="categoryName">
+                    <p>{video.displayName}</p>
+                  </div>
                 </div>
-                <div className="categoryName">
-                  <p>{video.displayName}</p>
-                </div>
-              </div>
               </Link>
             ))}
           </div>
@@ -133,13 +133,18 @@ export function HomePage() {
               <div className="promiseIcon">
                 <img src={icon.src} alt={icon.name} />
                 <div className="iconName">
-                    <p><b>{icon.adj}{" "}</b>{icon.name}</p>
+                  <p>
+                    <b>{icon.adj} </b>
+                    {icon.name}
+                  </p>
                 </div>
               </div>
             </div>
           ))}
         </div>
-        <div className="footer"><Footer/></div>
+        <div className="footer">
+          <Footer />
+        </div>
       </div>
     </>
   );
