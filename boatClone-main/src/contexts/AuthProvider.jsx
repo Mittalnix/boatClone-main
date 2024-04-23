@@ -35,6 +35,28 @@ export function AuthProvider({ children }) {
         email: userEmail,
         password: userPassword,
       };
+      setUser(data);
+      const tokenObj = {
+        token:
+          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiIxZGE5ZDI3OC1lN2U2LTQzZTEtYjE2My0yMzU4ODZkMDNhOGYiLCJlbWFpbCI6ImFkYXJzaGJhbGlrYUBnbWFpbC5jb20ifQ.Az-_yAZw3tw1v8eNzxW9mHknN1XtqkDlTsDDYKW0xJ0",
+      };
+      const guestUserObj = {
+        user: {
+          _id: "1da9d278-e7e6-43e1-b163-235886d03a8f",
+          firstName: "Adarsh",
+          lastName: "Balika",
+          email: "adarshbalika@gmail.com",
+          createdAt: "2024-04-23T21:27:06+05:30",
+          updatedAt: "2024-04-23T21:27:06+05:30",
+          cart: [],
+          wishlist: [],
+          id: "1",
+        },
+      };
+      localStorage.setItem("login", JSON.stringify(tokenObj));
+      localStorage.setItem("user", JSON.stringify(guestUserObj));
+
+      return;
       try {
         const response = await fetch("api/auth/login", {
           method: "POST",

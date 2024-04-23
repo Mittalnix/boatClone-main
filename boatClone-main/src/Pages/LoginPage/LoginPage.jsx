@@ -8,13 +8,13 @@ import { ToastContainer, toast } from "react-toastify";
 import { UserProfile } from "../../components/UserProfile/UserProfile";
 
 export function LoginPage() {
-
   const { loginUser } = useAuth();
   const [userDetails, setUserDetails] = useState({ email: "", password: "" });
-  const { user } = localStorage.getItem("user") !== null
+  const { user } =
+    localStorage.getItem("user") !== null
       ? JSON.parse(localStorage.getItem("user"))
       : { user: null };
- 
+
   const inputChangeHandler = (e) => {
     const { name, value } = e.target;
     setUserDetails((prev) => ({
@@ -23,7 +23,8 @@ export function LoginPage() {
     }));
   };
 
-  const handleLogin = () => {
+  const handleLogin = (event) => {
+    event.preventDefault();
     toast.warning("please click on login as guest to continue...");
   };
 
@@ -85,12 +86,10 @@ export function LoginPage() {
             </form>
           </div>
         ) : (
-          <UserProfile/>
+          <UserProfile />
         )}
       </div>
-       <ToastContainer autoClose={2000} limit={1}/>
+      <ToastContainer autoClose={2000} limit={1} />
     </>
-   
   );
- 
 }

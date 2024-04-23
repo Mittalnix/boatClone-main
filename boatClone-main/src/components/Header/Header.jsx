@@ -11,7 +11,7 @@ import { useWishList } from "../../contexts/WishListProvider";
 export function Header() {
   const navigate = useNavigate();
   const { showCart, setShowCart, cartCount } = useCart();
-  const { setSearchInput } = useSearch();
+  const { searchInput, setSearchInput } = useSearch();
   const { wishlistCount } = useWishList();
 
   const searchHandler = (event) => {
@@ -48,6 +48,7 @@ export function Header() {
                 type="text"
                 placeholder="Search"
                 onChange={searchHandler}
+                value={searchInput}
               />
             </div>
             <div className="login">
@@ -60,7 +61,7 @@ export function Header() {
             </div>
             <div className="cart" onClick={() => setShowCart(!showCart)}>
               <HiOutlineShoppingBag />
-              {cartCount && <span>{cartCount}</span>}
+              {!!cartCount && <span>{cartCount}</span>}
             </div>
             <div className="wishlist">
               <Link to="/wishlist">
